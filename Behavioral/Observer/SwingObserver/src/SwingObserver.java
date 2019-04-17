@@ -21,11 +21,6 @@ public class SwingObserver {
 
         JButton button = new JButton("Should I do it?");
 
-        // Без использования лямбда выражений
-//        button.addActionListener(new AngelListener());
-//        button.addActionListener(new DevilListener());
-
-        // С лямбда выражениями
         button.addActionListener(event ->
                 System.out.println("Don't do it, you might regret it!")
         );
@@ -40,20 +35,4 @@ public class SwingObserver {
         frame.setSize(300,300);
         frame.setVisible(true);
     }
-
-	/**
-	 * Уделение последних двух классов для импользования лямбда выражений
-	 */
-//	class AngelListener implements ActionListener {
-//		public void actionPerformed(ActionEvent event) {
-//			System.out.println("Don't do it, you might regret it!");
-//		}
-//	}
-//	class DevilListener implements ActionListener {
-//		public void actionPerformed(ActionEvent event) {
-//			System.out.println("Come on, do it!");
-//		}
-//	}
-
-
 }
