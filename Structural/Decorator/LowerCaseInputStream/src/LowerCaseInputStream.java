@@ -1,7 +1,7 @@
 import java.io.*;
 
 /**
- * Декоратор приводящий все символы в нижний регистр после прочтения файла
+ * Декоратор приводящий все символы в нижний регистр
  */
 public class LowerCaseInputStream extends FilterInputStream {
 
